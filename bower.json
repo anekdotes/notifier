@@ -1,0 +1,22 @@
+{
+  "name": "notifier",
+  "version": "1.0.0",
+  "authors": [
+    "Mathieu <mathieu.gosselin@anekdotes.com>"
+  ],
+  "description": "",
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".gitignore",
+    "readme.md"
+  ],
+  "dependencies": {
+    "jquery": "<2.0.0"
+  }
+}

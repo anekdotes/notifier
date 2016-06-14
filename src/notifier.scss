@@ -1,0 +1,18 @@
+.alerts-container {
+  position: fixed;
+  top: 15px;
+  right: 0;
+  left: 50%;
+  width:500px;
+  margin-left:-250px;
+  z-index: 2000;
+  box-sizing:border-box;
+  text-align:center;
+}
+.alerts-container .alert-item {
+  min-width: 300px;
+  max-width: 500px;
+}
+.alerts-container .alert-item h4 {
+  margin:0px;
+}
