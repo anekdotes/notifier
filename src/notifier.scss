@@ -1,4 +1,4 @@
-.alerts-container {
+.notifier-container {
   position: fixed;
   top: 15px;
   right: 0;
@@ -8,11 +8,11 @@
   z-index: 2000;
   box-sizing:border-box;
   text-align:center;
-}
-.alerts-container .alert-item {
-  min-width: 300px;
-  max-width: 500px;
-}
-.alerts-container .alert-item h4 {
-  margin:0px;
+  .notifier-item {
+    min-width: 300px;
+    max-width: 500px;
+    h4 {
+      margin:0px;
+    }
+  }
 }

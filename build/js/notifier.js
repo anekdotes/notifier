@@ -31,16 +31,17 @@
 
     // Build alert element
     $alertElem = $('<div/>');
-    $alertElem.addClass('alert').addClass('alert-item').addClass('alert-'+params.type);
+    $alertElem.addClass('notifier').addClass('notifier-item').addClass('notifier-'+params.type);
     $alertElem.append('<h4>'+params.title+'</h4>');
     $alertElem.append('<div>'+params.message+'</div>');
     $alertElem.hide();
 
     // Append it and show it
     $container.append($alertElem);
-    $alertElem.fadeIn(
-      { duration: 300, easing: 'swing' }
-    );
+    $alertElem.fadeIn({
+      duration: 300,
+      easing: 'swing'
+    });
 
     // Set time of death
     if (options.duration > 0) {
@@ -124,7 +125,7 @@
   function getDefaults() {
     return {
       duration: 7500,
-      container: '#alerts-container'
+      container: '#notifier-container'
     };
   }
   function removeAlert($alert) {
@@ -134,7 +135,7 @@
   }
 
   $(function(){
-    $('body').append('<div class="alerts-container" id="alerts-container"></div>');
+    $('body').append('<div class="notifier-container" id="notifier-container"></div>');
   });
 
 })(window, $);
