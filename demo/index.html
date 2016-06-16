@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../build/css/notifier.css">
+    </head>
+    <body>
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <button type="button" id="notifierSuccess">Success</button>
+        <button type="button" id="notifierError">Error</button>
+        <button type="button" id="notifierInfo">Info</button>
+        <button type="button" id="notifierWarning">Warning</button>
+        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+        <script type="text/javascript" src="../build/js/notifier.min.js"></script>
+        <script type="text/javascript">
+          $(function(){
+            $('#notifierSuccess').on('click', function(e){
+              Notifier.alert.success('success', '');
+            });
+
+            $('#notifierError').on('click', function(e){
+              Notifier.alert.error('Error', '');
+            });
+
+            $('#notifierInfo').on('click', function(e){
+              Notifier.alert.info('Info', '');
+            });
+
+            $('#notifierWarning').on('click', function(e){
+              Notifier.alert.warning('Warning', '');
+            });
+
+          });
+        </script>
+    </body>
+</html>
